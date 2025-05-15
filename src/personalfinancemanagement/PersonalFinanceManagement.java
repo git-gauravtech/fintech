@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package personalfinancemanagement;
-
+import javax.swing.JFrame;
 import Login.Login;
 
 /**
@@ -19,7 +19,8 @@ public class PersonalFinanceManagement {
         // TODO code application logic here
         Login LoginFrame = new Login();
         LoginFrame.setVisible(true);
-        LoginFrame.pack();
+//        LoginFrame.pack();
+        LoginFrame.setExtendedState(JFrame.MAXIMIZED_BOTH); // Makes it full screen
         LoginFrame.setLocationRelativeTo(null); 
     }
     
