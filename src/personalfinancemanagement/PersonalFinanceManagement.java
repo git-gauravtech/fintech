@@ -18,9 +18,9 @@ public class PersonalFinanceManagement {
     public static void main(String[] args) {
         // TODO code application logic here
         Login LoginFrame = new Login();
-        LoginFrame.setVisible(true);
-//        LoginFrame.pack();
-        LoginFrame.setExtendedState(JFrame.MAXIMIZED_BOTH); // Makes it full screen
+        LoginFrame.setVisible(true);  
+        LoginFrame.pack();
+//        LoginFrame.setExtendedState(JFrame.MAXIMIZED_BOTH); // Makes it full screen
         LoginFrame.setLocationRelativeTo(null); 
     }
     
