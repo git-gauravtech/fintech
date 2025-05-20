@@ -18,8 +18,7 @@ public class Login extends javax.swing.JFrame {
     }
     
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+  
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
@@ -181,27 +180,22 @@ public class Login extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }s
 
-    private void passwordActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_passwordActionPerformed
-        // TODO add your handling code here:
-    }// GEN-LAST:event_passwordActionPerformed
+    private void passwordActionPerformed(java.awt.event.ActionEvent evt) {\
+    }
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
         SignUp SignUpFrame = new SignUp();
         SignUpFrame.setVisible(true);
         SignUpFrame.pack();
         SignUpFrame.setLocationRelativeTo(null);
         this.dispose();
-    }// GEN-LAST:event_jButton2ActionPerformed
+    }
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        // login code
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         var user_id = username.getText();
         var pass = password.getText();
-
         if (user_id.isEmpty() || pass.isEmpty()) {
             JOptionPane.showMessageDialog(rootPane, "Please fill in both username and password fields.");
             return;
@@ -228,17 +222,9 @@ public class Login extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(rootPane, e);
         }
 
-    }// GEN-LAST:event_jButton1ActionPerformed
+    }
 
     public static void main(String args[]) {
-        // <editor-fold defaultstate="collapsed" desc=" Look and feel setting code
-        // (optional) ">
-        /*
-         * If Nimbus (introduced in Java SE 6) is not available, stay with the default
-         * look and feel.
-         * For details see
-         * http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
-         */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -255,7 +241,6 @@ public class Login extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        // </editor-fold>
 
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -264,7 +249,7 @@ public class Login extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+   
     private javax.swing.JPanel Left;
     private javax.swing.JPanel Right;
     private javax.swing.JButton jButton1;
@@ -278,7 +263,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField password;
     private javax.swing.JTextField username;
-    // End of variables declaration//GEN-END:variables
+
 
     private Connection con;
     private ResultSet rs;
